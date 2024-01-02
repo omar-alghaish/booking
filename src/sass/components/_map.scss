@@ -1,0 +1,103 @@
+.map {
+  position: relative;
+  z-index: 1000000000000;
+  height: 100vh !important;
+  .top {
+    width: 500px;
+    max-width: 80%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    top: 20px;
+    z-index: 1000000000;
+    .input {
+      width: 100%;
+      box-shadow: 0px 32px 84px 0px rgba(14, 86, 124, 0.16);
+      outline: none;
+      input {
+        border: none;
+        width: 100%;
+        height: 70px;
+        padding: 20px;
+        border-radius: 10px;
+        font-size: 20px;
+      }
+      button {
+        position: absolute;
+        right: 13px;
+        top: 20px;
+        background-color: rgba(255, 255, 255, 0.153);
+        font-size: 25px;
+        border: none;
+        // top: 50%;
+        // transform: translateY(-50%);
+      }
+    }
+    .recomandation {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        div {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .map {
+    .top {
+      .input {
+        width: 100%;
+        input {
+          border: none;
+          width: 100%;
+          height: 60px;
+          padding: 20px;
+          border-radius: 10px;
+          outline: none;
+        }
+        button {
+          position: absolute;
+          right: 13px;
+          top: 17px;
+          background-color: rgba(255, 255, 255, 0.153);
+          font-size: 25px;
+          border: none;
+          // top: 50%;
+          // transform: translateY(-50%);
+        }
+      }
+      .recomandation {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          div {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+.custom-map-container {
+  height: calc(100vh - 100px); /* Adjusted height */
+}
+
+.leaflet-control-zoom {
+  bottom: 50px;
+  right: 30px; /* Adjusted position from the bottom */
+}

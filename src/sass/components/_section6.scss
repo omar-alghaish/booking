@@ -1,0 +1,292 @@
+.section6 {
+  padding-left: 10%;
+  .left {
+    // position: absolute;
+
+    h1 {
+      color: #1d293f;
+      font-size: 40px;
+      font-weight: 700;
+      letter-spacing: -0.64px;
+      padding-bottom: 20px;
+    }
+
+    p {
+      color: #546179;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 36px;
+      letter-spacing: -0.38px;
+    }
+  }
+  .first-row {
+  }
+  .catagory-swiper {
+    padding-top: 100px;
+  }
+  .swiper-container {
+    padding: 40px 0;
+    position: relative;
+    .swiper-slide {
+      //   width: 1296px;
+      height: 670px;
+
+      background: #fff;
+      .tour-guide-item {
+        display: flex;
+
+        .profile-img {
+          width: 512px;
+          height: 670px;
+          position: relative;
+          .slide-number {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 72px;
+            height: 72px;
+            border-top-right-radius: 20px;
+            color: #1d293f;
+            font-size: 24px;
+            font-weight: 400;
+            letter-spacing: -0.4px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .info {
+          padding: 39px 32px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          position: relative;
+          .top {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            .title {
+              color: #28b0a6;
+              font-size: 24px;
+              font-weight: 400;
+              letter-spacing: -0.38px;
+            }
+            .first-name,
+            .last-name {
+              color: #1d293f;
+              font-size: 40px;
+              font-weight: 500;
+              letter-spacing: -0.38px;
+            }
+          }
+          .middle {
+            display: flex;
+            justify-content: space-between;
+            .about,
+            .journey {
+              width: 40%;
+              display: flex;
+              flex-direction: column;
+              gap: 22px;
+              h3 {
+                color: #000;
+
+                font-size: 24px;
+                font-weight: 400;
+                letter-spacing: -0.38px;
+              }
+              p {
+                color: #99a3ad;
+
+                font-size: 16px;
+                font-weight: 400;
+                letter-spacing: 0.5px;
+              }
+            }
+          }
+          .bottom {
+            display: flex;
+            gap: 32px;
+            a {
+              color: #000;
+
+              font-size: 18px;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+    .custom-prev {
+      display: block;
+    }
+    .custom-next {
+      display: block;
+    }
+  }
+  .icons-container {
+    position: absolute;
+    top: -70px;
+    right: 10%;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .section6 {
+    padding: 0;
+    width: 90%;
+    margin-left: 5%;
+    .left {
+      // position: absolute;
+
+      h1 {
+        color: #1d293f;
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: -0.64px;
+        padding-bottom: 20px;
+      }
+
+      p {
+        color: #546179;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: -0.38px;
+      }
+    }
+    .first-row {
+    }
+    .catagory-swiper {
+      padding-top: 100px;
+    }
+    .swiper-container {
+      padding: 40px 0;
+      position: relative;
+      .swiper-slide {
+        width: 100%;
+        height: max-content;
+
+        background: #fff;
+        .tour-guide-item {
+          display: flex;
+          flex-direction: column;
+          gap: 32px;
+          .profile-img {
+            width: 200px;
+            height: 250px;
+
+            position: relative;
+            .slide-number {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 42px;
+              height: 42px;
+              border-top-right-radius: 15px;
+              color: #1d293f;
+              font-size: 16px;
+              font-weight: 400;
+              letter-spacing: -0.4px;
+              background-color: white;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .info {
+            padding: 00;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            gap: 30px;
+            .top {
+              display: flex;
+              flex-direction: column;
+              gap: 15px;
+              .title {
+                color: #28b0a6;
+                font-size: 20px;
+                font-weight: 400;
+                letter-spacing: -0.38px;
+              }
+              .first-name,
+              .last-name {
+                color: #1d293f;
+                font-size: 30px;
+                font-weight: 500;
+                letter-spacing: -0.38px;
+              }
+            }
+            .middle {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              gap: 30px;
+              .about,
+              .journey {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                h3 {
+                  color: #000;
+
+                  font-size: 24px;
+                  font-weight: 400;
+                  letter-spacing: -0.38px;
+                }
+                p {
+                  color: #99a3ad;
+
+                  font-size: 16px;
+                  font-weight: 400;
+                  letter-spacing: 0.5px;
+                }
+              }
+            }
+            .bottom {
+              display: flex !important;
+              gap: 32px;
+              a {
+                color: #000;
+
+                font-size: 18px;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+      .custom-prev {
+        display: none;
+      }
+      .custom-next {
+        display: none;
+      }
+    }
+    .icons-container {
+      position: absolute;
+      top: -70px;
+      right: 10%;
+      display: flex;
+      align-items: center;
+      width: 200px;
+      gap: 20px;
+    }
+  }
+}

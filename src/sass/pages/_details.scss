@@ -1,0 +1,92 @@
+.details-container {
+  .second-part {
+    width: calc(80% - 300px);
+    margin-left: calc(300px + 10%);
+    display: flex;
+    gap: 100px;
+    padding: 50px 0;
+    .discription-container {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      .discription-header {
+        padding: 30px 0;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid #e9ecef;
+        .line2 {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+      .swap {
+        padding: 30px 0;
+        border-bottom: 1px solid #e9ecef;
+        .header {
+          display: flex;
+          justify-content: space-between;
+          p {
+            color: #546179;
+
+            font-size: 18px;
+            font-weight: 400;
+            &:nth-child(1) {
+              color: #28b0a6;
+              position: relative;
+              font-size: 18px;
+              font-weight: 400;
+              &::before {
+                content: "";
+                height: 6px;
+                width: 25px;
+                border-radius: 5px;
+                position: absolute;
+                left: 0;
+                bottom: -5px;
+                background-color: #28b0a6;
+              }
+            }
+          }
+        }
+        .content {
+          display: flex;
+          margin-top: 60px;
+          gap: 60px;
+          .show-more {
+            color: #99a3ad;
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+          }
+          .icons {
+            padding-top: 80px;
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            .item {
+              display: flex;
+              flex-direction: column;
+              width: 100%;
+              gap: 25px 20px;
+              p {
+                color: #546179;
+
+                font-size: 16px;
+                font-weight: 400;
+                letter-spacing: 0.5px;
+              }
+            }
+
+            .icon {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
