@@ -30,6 +30,7 @@ const routes = [
 export const headerRoutes =[
   {
     index: true,
+    path:"/",
     element: <Home />,
     state: "Destination",
   },

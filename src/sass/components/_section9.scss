@@ -1,6 +1,6 @@
 .section9 {
   width: 80%;
-  margin-left:5% ;
+  margin-left:10% ;
   bottom: 0;
   left: 0;
   right: 0;
@@ -90,4 +90,11 @@
 .smallTicker {
   width: 100%;
   overflow: hidden;
+}
+
+@media screen and (max-width: 800px) {
+  .section9{
+    width: 90%;
+    margin-left: 5%;
+  }
 }

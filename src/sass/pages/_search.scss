@@ -6,7 +6,7 @@
   .search-header {
     display: flex;
     flex-direction: column;
-gap: 40px;
+    gap: 40px;
     .row1 {
       display: flex;
       justify-content: space-between;
@@ -44,12 +44,16 @@ gap: 40px;
     }
     .row2 {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      gap: 10px;
+
       .item {
         width: 240px;
         // height: 76px;
+        flex-grow: 1;
         border-radius: 16px;
-        border: 1px solid  #E9ECEF;
+        border: 1px solid #e9ecef;
         background: #fff;
         display: flex;
         align-items: center;
@@ -58,9 +62,97 @@ gap: 40px;
       }
     }
   }
-  .bottom-container{
+  .bottom-container {
     display: flex;
     padding: 48px 0;
     gap: 78px;
   }
+}
+
+@media screen and (max-width: 1100px) {
+  .search-result {
+    width: 90%;
+    margin-left: 5%;
+    .search-header {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      margin-top: 50px;
+      .row1 {
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+        border-radius: 10px;
+        height: max-content;
+        padding: 24px;
+        flex-direction: column;
+        .left {
+          color: #212529;
+          font-size: 13px;
+          font-weight: 500;
+          line-height: 20px;
+        }
+        .right {
+          display: flex;
+          align-items: center;
+          gap: 30px;
+          p {
+            color: #546179;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 20px;
+          }
+          h5 {
+            color: #212529;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 20px;
+          }
+        }
+      }
+      .row2 {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 10px;
+        height: max-content;
+        .item {
+          width: max-content;
+          border-radius: 10px;
+          border: 1px solid #e9ecef;
+          background: #fff;
+          display: flex;
+          align-items: center;
+          padding: 15px;
+          gap: 5px;
+          font-size: 15px;
+        }
+      }
+    }
+    .bottom-container {
+      display: flex;
+      padding: 48px 0;
+      gap: 30px;
+      flex-direction: column;
+      align-items: center;
+      .cards-container{
+        width: 100%;
+      }
+    }
+    .filter{
+    display: block;
+    background-color: #28b0a6;
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 15px;
+    width: 100%;
+  }
+  }
+  
+}
+
+
+.filter{
+  display: none;
 }

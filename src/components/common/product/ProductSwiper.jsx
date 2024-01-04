@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -13,11 +13,13 @@ import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
 
 const ProductSwiper = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  const initialDirection = window.innerWidth < 768 ? 'horizontal' : 'vertical';
+
 
   return (
     <div className='swiper-container-product'>
           <Swiper
-                direction="vertical"
+                direction={initialDirection}
 
         onSwiper={setThumbsSwiper}
         spaceBetween={10}

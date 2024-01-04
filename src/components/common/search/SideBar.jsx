@@ -7,7 +7,7 @@ import PriceRangeSlider from "../Range";
 import { useSelector, useDispatch } from 'react-redux';
 import { setDuration, setTags, setRatings, setAgeGroups, setSpecials } from "../../../redux/features/filterSlice";
 
-const SideBar = () => {
+const SideBar = ({name}) => {
   const selectedTags = useSelector((state) => state.filters.selectedTags);
   const selectedDuration = useSelector((state) => state.filters.selectedDuration);
   const selectedRatings = useSelector((state) => state.filters.selectedRatings);
@@ -49,7 +49,7 @@ const SideBar = () => {
   };
 
   return (
-    <div className="search-side-bar">
+    <div className={`search-side-bar ${name}`}>
       <div className="date">
         <input type="date" id="dateInput" className="datepicker-input" />
         <label
